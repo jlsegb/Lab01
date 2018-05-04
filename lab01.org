@@ -11,23 +11,41 @@ As a group or individually create a public repo on github.
 Then create your own file with your solutions.  Please include
 the name of each team member. 
 
-* TODO Welcome to the world of unicorns, goblins
+* DONE Welcome to the world of unicorns, goblins
+  CLOSED: [2018-05-04 Fri 14:40]
+  :LOGBOOK:
+  CLOCK: [2018-05-03 Thu 10:52]--[2018-05-03 Thu 10:52] =>  0:00
+  :END:
 In this world unicorns only tell the truth.
 Goblins only lie.
 A says: B is a unicorn.
 B says: A and I are opposite type.
 
-What is A:
-What is B:
+What is A: Goblin
+What is B: Goblin
 
-* TODO 8 duds and 1 armed bomb.
+* DONE 8 duds and 1 armed bomb.
+  CLOSED: [2018-05-03 Thu 10:57]
+  :LOGBOOK:
+  CLOCK: [2018-05-03 Thu 10:52]--[2018-05-03 Thu 10:56] =>  0:04
+  :END:
 Some idiot forgot to disarm a bomb that is laid in the 'decomisioned' bomb pile.
 Unfortunately the only way to tell which bomb is armed is to use a special weighing system.
 To add insult to injury we don't know if the armed bomb weighs less or more on the system just that it weighs differently.
 But there is yet another catch the weighing system only have two charges left, but it can weight any number of bombs at once.
 Your job is to tell which 1 bomb out of the 9 bombs is armed while only using the weighing machine twice.
 
-* TODO The BEAST
+Solution: We first weight two groups of three bombs. If they are the same weight then we know that the disarmed bomb 
+is the one on the third group. If the first two bomb groups are different weight, the heavier side is the one group with the disarmed bomb.
+At this point we should know in which group of 3 the bomb is located at. At that point we measure two of the three bombs of the group.
+If the bombs are the same then the disarmed bomb is the one that we didn't measure. If one of them is heavier then thehhat is the disarmed bomb.
+
+
+* DONE The BEAST
+  CLOSED: [2018-05-04 Fri 17:36]
+  :LOGBOOK:
+  CLOCK: [2018-05-03 Thu 17:35]--[2018-05-03 Thu 20:20] =>  2:45
+  :END:
 The Shoe Shack has made several top-dollar sales today. 
 Using only the clues below, match each customer to their foot size, 
 shoe brand and final purchase price.
@@ -53,28 +71,317 @@ No option in any category will ever be used more than once.
 Solution
 
 | Shoe Sizes | Customers | Brands | Prices |
-|          4 |           |        |        |
-|          5 |           |        |        |
-|          6 |           |        |        |
-|          7 |           |        |        |
-|          8 |           |        |        |
-|          9 |           |        |        |
-|         10 |           |        |        |
+|          4 | Marie     | Graffe |  185   |
+|          5 | Vanessa   | Schtil |  215   |
+|          6 | Lucia     | Corman |  Z     |
+|          7 | X         | Tinghi |  260   |
+|          8 | Natalie   | Willif |  125   |
+|          9 | Francine  | Y      |  245   |
+|         10 | Ruth      | Abbot  |  170   |
 
-* TODO Exercises
+* DONE Exercises
+  CLOSED: [2018-05-04 Fri 15:10]
 In 01-ponder do every third exercise. 
 That is if you start at the first or 1st then you need to do 4th,
 but if you start at 3rd then you need to do the 6th.
 
 You must put them in this file!
+* NOTE I accidentally did some of the puzzles and problems. I already talked to you. I'm good to go. You told me not to do the OJL.
+** DONE UCA
+   CLOSED: [2018-05-02 Wed 18:58]
+   :LOGBOOK:
+   CLOCK: [2018-05-02 Wed 18:55]--[2018-05-02 Wed 18:58] =>  0:03
+   :END:
+#+begin_note
+  Start your exercise warmup by thinking up three examples and three
+  non-examples of propositions. Make them pithy.
+#+end_note
+#+begin_info
+  I'm handsome.
+  She's a good dancer
+  God lives.
+  
+  Go play videogames!
+  Why do you like Math?
+  Who's that?
+#+end_info
 
-* DO NOT INCLUDE THIS PART BELOW FOR THE LAB
-* ######## FOR PUZZLES AND PROJECTS #########
-A more Brother Neff-like assignment, with a Brother Benning twist!
+** DONE OGR
+   CLOSED: [2018-05-02 Wed 19:15]
+   :LOGBOOK:
+   CLOCK: [2018-05-02 Wed 19:09]--[2018-05-02 Wed 19:15] =>  0:06
+   :END:
+#+begin_note
+  Which of the following are simple (not compound) propositions?
 
-Please Complete all Problems and Puzzles including the 'optional ones', but skipping the exercises.
-I would recommend working together.  As always I will give out hints
-periodically.
+  1. Weeks are shorter than months.
+  2. Days are longer than hours and minutes.
+  3. Hours are longer than minutes and seconds are shorter than minutes.
+  4. People can fly or pigs can sing.
+#+end_note
+#+begin_info
+  1. (W < M) (This is the only simple proposition)
+  2. (D > H) & (D > M)
+  3. (H > M) & (S < M)
+  4. P.F | Pi.Sing (People can fly is a proposition, Pigs can sing is another proposition)
+#+end_info
 
-(NOTE:I would keep all your exercises/problems/puzzles you do, if you
-take DM 2, you may find these extreeeeeeeeeemly helpful, or not)
+
+** DONE UOX
+   CLOSED: [2018-05-04 Fri 14:52]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 14:41]--[2018-05-04 Fri 14:52] =>  0:11
+   :END:
+#+begin_note
+  What other special forms besides =if= does elisp have for doing conditionals?
+  Why are they called \ldquo{}special\rdquo?
+:HINT:
+  - Hint :: You can find at least six.
+:END:
+#+end_note
+#+begin_info
+  It's called special because the branch that is not selected is never evaluated.
+  The special forms are: When, Unless, Cond, Typecase, case, If.
+#+end_info
+** DONE OTX
+   CLOSED: [2018-05-04 Fri 15:10]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 14:55]--[2018-05-04 Fri 15:00] =>  0:05
+   :END:
+#+begin_note
+  Determine whether these sentences use an inclusive or, or an exclusive or:
+  1. A side of fries or chips comes with your sandwich.
+  2. A high school diploma or a GED are needed for this position.
+  3. To get your license, you must provide your social security card or birth certificate.
+  4. We accept Mastercard or Visa credit cards.
+  5. You can cash in your tickets or exchange them for a prize.
+  6. Take it or leave it.
+#+end_note
+#+begin_info
+  1. Xor
+  2. Or
+  3. Or
+  4. Or
+  5. Xor
+  6. Xor
+#+end_info
+** TODO OJL
+#+begin_note
+  Justify where $p = x \in A, q = x \in B, r = x \in C$:
+
+  | Set | As Union of     | Logic \equiv Set Operation Description                                                       |
+  |-----+-----------------+-----------------------------------------------------------------------------------------|
+  | A   | 4 \cup 5 \cup 7 \cup 6 | $(p \land \lnot q \land \lnot r) \lor (p \land \lnot q \land r) \lor (p \land q \land r) \lor (p \land q \land \lnot r)$ |
+  | B   | 2 \cup 3 \cup 7 \cup 6 | $(\lnot p \land q \land \lnot r) \lor (\lnot p \land q \land r) \lor (p \land q \land r) \lor (p \land q \land \lnot r)$ |
+  | C   | 1 \cup 3 \cup 5 \cup 7 | $(\lnot p \land \lnot q \land r) \lor (\lnot p \land q \land r) \lor (p \land \lnot q \land r) \lor (p \land q \land r)$ |
+:HINT:
+  - Hint :: The exercise could be more explicitly stated as: Provide
+            justification for the equivalence of the logical and set operation
+            description (columns 3 and 2) for each set (column 1) in the table.
+            So, use wording like \ldquo{}Set A is justified as the union of numbered
+            regions 4, 5, 7 and 6, because \dots\rdquo.
+:END:
+#+end_note
+#+begin_info
+  Your answer goes here.
+#+end_info
+
+
+** DONE UTQ
+   CLOSED: [2018-05-04 Fri 15:19]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:14]--[2018-05-04 Fri 15:19] =>  0:05
+   :END:
+#+begin_note
+  Let /p/ and /q/ be the propositions:
+
+  /p/: You applied for admission at BYU-Idaho.
+
+  /q/: You were accepted.
+
+  Express these sentences as propositions using logical connectives.
+  1. You applied for admission at BYU-Idaho and were accepted.
+  2. You did not apply for admission at BYU-Idaho but were still accepted.
+  3. You applied for admission at BYU-Idaho but were not accepted.
+  4. Either you did not apply for admission at BYU-Idaho and didn\rsquo{}t get accepted
+     or you did apply and got accepted.
+#+end_note
+#+begin_info
+  1.p ∧ q
+  2.¬p ∧ q
+  3.p ∧ ¬q
+  4.(¬p ∧ ¬q)∨( p ∧ q)
+#+end_info
+
+
+** DONE UWY
+   CLOSED: [2018-05-04 Fri 15:29]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:25]--[2018-05-04 Fri 15:29] =>  0:04
+   :END:
+#+begin_note
+  Use truth tables to verify the distributive laws.
+  1. $p \wedge (q \lor r) \equiv (p \wedge q) \lor (p \wedge r)$.
+  2. $p \vee (q \wedge r) \equiv (p \vee q) \wedge (p \vee r)$.
+#+end_note
+#+begin_info
+  p | q | r | p \wedge (q \lor r) | (p \wedge q) \lor (p \wedge r)
+  0   0   0        0                0
+  0   0   1        0                0
+  0   1   0        0                0
+  0   1   1        0                0
+  1   0   0        0                0
+  1   0   1        1                1
+  1   1   0        1                1 
+  1   1   1        1                1
+
+  p | q | r | p \vee (q \wedge r) | (p \vee q) \wedge (p \vee r)
+  0   0   0        0                0
+  0   0   1        0                0
+  0   1   0        0                0
+  0   1   1        1                1
+  1   0   0        1                1
+  1   0   1        1                1
+  1   1   0        1                1 
+  1   1   1        1                1
+
+ 
+#+end_info
+
+** DONE OYP
+   CLOSED: [2018-05-04 Fri 15:37]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:34]--[2018-05-04 Fri 15:37] =>  0:03
+   :END:
+#+begin_note
+  Match the following set identities with their counterparts in the
+  miscellaneous logic laws:
+
+  1. A \cap U = A
+  2. A \cup U = U.
+  3. A \cup \empty = A.
+  4. A \cap \empty = \empty.
+  5. $\overline{\overline{\mathsf{A}}} = \mathsf{A}$.
+#+end_note
+#+begin_info
+  1.idempotence
+  2. absorption
+  3. idempotence
+  4. absorption.
+  5. Double negation.
+#+end_info
+
+ 
+** DONE UOH
+   CLOSED: [2018-05-04 Fri 15:44]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:37]--[2018-05-04 Fri 15:44] =>  0:07
+   :END:
+#+begin_note
+  Let /p/ and /q/ be the propositions:
+
+  /p/: You applied for admission at BYU-Idaho.
+
+  /q/: You were accepted.
+
+  Express these sentences as propositions using logical connectives:
+  1. Your applying for admission at BYU-Idaho is necessary for your being
+     accepted.
+  2. Your being accepted is a sufficient condition for your applying for
+     admission at BYU-Idaho.
+  3. Your applying for admission at BYU-Idaho is necessary and sufficient for
+     your being accepted.
+#+end_note
+#+begin_info
+  
+  3.
+    p --> q
+
+  2. 
+    q --> p  
+
+  1.
+    q <--> p
+  
+#+end_info
+
+
+** DONE OTD
+   CLOSED: [2018-05-04 Fri 16:08]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:55]--[2018-05-04 Fri 16:08] =>  0:13
+   :END:
+#+begin_note
+  Construct a truth table for (p \lor q) \land (\not p \lor r) \rightarrow (q v r).
+#+end_note
+#+begin_info
+  p | q | r | (p \lor q) \land (\not p \lor r) | (q \lor r) | (p \lor q) \land (\not p \lor r) \rightarrow (q v r)
+  0   0   0            0                  0               1
+  0   0   1            0                  1               1
+  0   1   0            1                  1               1
+  0   1   1            1                  1               1
+  1   0   0            0                  0               1
+  1   0   1            1                  1               1
+  1   1   0            0                  1               1
+  1   1   1            1                  1               1
+#+end_info
+
+
+** DONE UEZ
+   CLOSED: [2018-05-04 Fri 16:19]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 16:15]--[2018-05-04 Fri 16:18] =>  0:03
+   :END:
+#+begin_note
+  Find a compound proposition involving the propositional variables /p/, /q/, and /r/
+  that is true when /p/ and /q/ are true and /r/ is false, but is false otherwise.
+#+end_note
+#+begin_info
+   \not r \land p \land q
+#+end_info
+
+
+** DONE USV
+   CLOSED: [2018-05-04 Fri 17:12]
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 16:27]
+   :END:
+#+begin_note
+  Or pyrire jvgu ahzoref. Svaq n jnl gb vafreg vagb gurfr gra yvarf gur sbhe
+  fgnaqneq zngu bcrengbef (+, -, \gvzrf, \qvi), be ! (snpgbevny), be \enqvp (fdhner ebbg),
+  naq cneragurfrf sbe tebhcvat, gb znxr gra qvssrerag rkcerffvbaf gung rnpu
+  rinyhngr gb 6. Sbe rknzcyr: \enqvp4 + \enqvp4 + \enqvp4 = 6.
+  (| 0 |! + | 0 |! + | 0 |!)! | = | 6 |
+  |   |   |   |   |   |   |   |   |
+ (| 1 | + | 1 | + | 1 |)! | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  | 2 | + | 2 | + | 2 |  | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  | 3 | * | 3 | - | 3 |   | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  sqr| 4 | +  sqr| 4 | +  sqr| 4 |   | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  | 5 |+ (| 5 | / | 5 |)  | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  | 6 |  * (| 6 |   | 6 |)  | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  | 7 | - (| 7 | / | 7 |)  | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  | 8 | -sqr(sqr( | 8 | + | 8 |)) | = | 6 |
+  |   |   |   |   |   |   |   |   |
+  | 9 | - sqr(sqr(| 9 |  * | 9 |)) | = | 6 |
+  |   |   |   |   |   |   |   |   |
+:HINT:
+  - Hint :: The puzzle is first of all to figure out what this exercise/problem
+            is asking. Did you work all the way through the Elisp Mini Primer
+            (see OQP)?
+:END:
+#+end_note
+*** Rephrase
+**** Play with the operators to make all the equations equal 6
+*** Approach
+**** Try with different operations until I succeed 
+*** Solution
+*** Proof
+    Verify with code calculations.
+
